@@ -1,15 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <script src="../src/js/main.js" defer></script>
+  <title>Mehrwertsteuer-Rechner</title>
 </head>
 
 <body>
-  <h1 class="bg-amber-500">hey</h1>
+  <div>
+    <div>
+      <h1>Mehrwertsteuer-Rechner</h1>
+      <div>
+        <form>
+          <p>Was soll berechnet werden?</p>
+          <div>
+            <input type="radio" checked="checked" id="nettoToBrutto" name="addOrSubtract">
+            <label for="">MwSt. aufschlagen (Netto zu Brutto)</label>
+          </div>
+          <div>
+            <input type="radio" id="bruttoToNetto" name="addOrSubtract">
+            <label>MwSt. abziehen (Brutto zu Netto)</label>
+          </div>
+
+          <p>Merhwertsteuersatz</p>
+          <div>
+            <div>
+              <input id="tax19percent" type="radio" checked="checked" name="vatRate" value="19">
+              <label for="tax19percent">19 %</label>
+            </div>
+            <div>
+              <input id="tax7percent" type="radio" name="vatRate" value="7">
+              <label for="tax7percent">7 %</label>
+            </div>
+          </div>
+
+          <div>
+            <p id="typeOfCalculation">Nettobetrag in Euro</p>
+            <input type="number" id="inputSum" name="inputSum" placeholder="100,00">
+          </div>
+
+          <div>
+            <button>Berechnen</button>
+          </div>
+        </form>
+
+        <h3>Ergebnis</h3>
+        <div>
+          <p id="inputSumTag">Nettobetrag</p>
+          <p id="inputSumDisplay">Betrag in €</p>
+        </div>
+
+        <div>
+          <p id="vatAmount">Mehrwertsteuerbetrag</p>
+          <p id="outputVat">Betrag in €</p>
+        </div>
+
+        <div>
+          <p id="endResultDescription">Bruttobetrag (Endpreis)</p>
+          <p id="endResult">Betrag in €</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
