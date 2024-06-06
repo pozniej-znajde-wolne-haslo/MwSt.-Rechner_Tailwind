@@ -4,7 +4,7 @@ This is a small project designed to calculate VAT (Valued Added Tax).
 It offers the options to calculate in the brutto-to-netto or netto-to-brutto direction.
 Additionally, you can choose either the 19% or 7% tax rate as the basis for your calculation.
 
-![Preview](./src/vat-calculator_img.png)
+![Preview](./src/assets/vat-calc_img.png)
 
 ## Functionality
 
