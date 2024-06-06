@@ -682,11 +682,6 @@ video {
   border-bottom-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
-.bg-amber-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
-}
-
 .bg-amber-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(180 83 9 / var(--tw-bg-opacity));
@@ -789,6 +784,14 @@ video {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.backgroundGradient{
+  background: linear-gradient(to bottom right, #d1dfeb,#8da7bd);
+}
+
+.shadow{
+  box-shadow: 0 0 3px 1px #9f9f9fb5;
 }
 
 .hover\:scale-105:hover {

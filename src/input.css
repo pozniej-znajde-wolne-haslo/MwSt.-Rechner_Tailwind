@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.backgroundGradient{
+  background: linear-gradient(to bottom right, #d1dfeb,#8da7bd);
+}
+
+.shadow{
+  box-shadow: 0 0 3px 1px #9f9f9fb5;
+}

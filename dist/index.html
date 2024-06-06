@@ -10,24 +10,24 @@
   <title>Mehrwertsteuer-Rechner</title>
 </head>
 
-<body>
-  <div>
-    <div>
-      <h1>Mehrwertsteuer-Rechner</h1>
-      <div>
+<body class="bg-stone-100">
+  <div class="container w-11/12 m-auto flex justify-center items-center h-screen">
+    <div class="border border-gray-400 rounded-lg text-sky-950 py-3 sm:w-96 sm:px-5 backgroundGradient shadow">
+      <h1 class="text-center text-2xl font-bold mt-5 mb-3">Mehrwertsteuer-Rechner</h1>
+      <div class="flex flex-col justify-center gap-3 p-3">
         <form>
-          <p>Was soll berechnet werden?</p>
-          <div>
+          <p class="text-center text-lg font-bold tracking-wide">Was soll berechnet werden?</p>
+          <div class="mt-2 mb-1">
             <input type="radio" checked="checked" id="nettoToBrutto" name="addOrSubtract">
             <label for="">MwSt. aufschlagen (Netto zu Brutto)</label>
           </div>
-          <div>
+          <div class="border-b border-b-slate-400 pb-2">
             <input type="radio" id="bruttoToNetto" name="addOrSubtract">
             <label>MwSt. abziehen (Brutto zu Netto)</label>
           </div>
 
-          <p>Merhwertsteuersatz</p>
-          <div>
+          <p class="text-center text-lg font-bold tracking-wide mt-1">Merhwertsteuersatz</p>
+          <div class="flex justify-center gap-5 mt-2 pb-2 border-b border-b-slate-400">
             <div>
               <input id="tax19percent" type="radio" checked="checked" name="vatRate" value="19">
               <label for="tax19percent">19 %</label>
@@ -38,30 +38,32 @@
             </div>
           </div>
 
-          <div>
-            <p id="typeOfCalculation">Nettobetrag in Euro</p>
-            <input type="number" id="inputSum" name="inputSum" placeholder="100,00">
+          <div class="flex flex-col gap-2 mt-1">
+            <p id="typeOfCalculation" class="text-center text-lg font-bold tracking-wide mb-1">Nettobetrag in Euro</p>
+            <input type="number" id="inputSum" name="inputSum" placeholder="100,00"
+              class="bg-slate-200 rounded-md py-0.5 pl-3">
           </div>
 
-          <div>
-            <button>Berechnen</button>
+          <div class="flex justify-center mt-5">
+            <button type="submit"
+              class="text-stone-200 font-semibold tracking-wide w-5/6 bg-amber-700 rounded-md px-3 py-1.5 shadow hover:bg-amber-800 hover:cursor-pointer hover:scale-105">Berechnen</button>
           </div>
         </form>
 
-        <h3>Ergebnis</h3>
+        <h3 class="text-center text-xl font-bold tracking-wide mt-2">Ergebnis</h3>
         <div>
-          <p id="inputSumTag">Nettobetrag</p>
-          <p id="inputSumDisplay">Betrag in €</p>
+          <p id="inputSumTag" class="text-lg font-bold tracking-wide mb-1">Nettobetrag</p>
+          <p id="inputSumDisplay" class="text-lg">Betrag in €</p>
         </div>
 
-        <div>
-          <p id="vatAmount">Mehrwertsteuerbetrag</p>
-          <p id="outputVat">Betrag in €</p>
+        <div class="mt-1">
+          <p id="vatAmount" class="text-lg font-bold tracking-wide mb-1">Mehrwertsteuerbetrag</p>
+          <p id="outputVat" class="text-lg">Betrag in €</p>
         </div>
 
-        <div>
-          <p id="endResultDescription">Bruttobetrag (Endpreis)</p>
-          <p id="endResult">Betrag in €</p>
+        <div class="mt-1">
+          <p id="endResultDescription" class="text-lg font-bold tracking-wide mb-1">Bruttobetrag (Endpreis)</p>
+          <p id="endResult" class="text-lg mb-2">Betrag in €</p>
         </div>
       </div>
     </div>
