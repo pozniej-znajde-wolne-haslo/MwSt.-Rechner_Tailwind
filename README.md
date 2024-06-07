@@ -13,3 +13,8 @@ This Project uses Vanilla JavaScript and DOM-Manipulation to implement its funct
 ## Styling
 
 Tailwind (utility-first CSS framework) was used for the styling.
+
+## Pen
+
+To try the calculator out, visit Codepen:
+https://codepen.io/pozniej-znajde-wolne-haslo/pen/BaeZOQL
