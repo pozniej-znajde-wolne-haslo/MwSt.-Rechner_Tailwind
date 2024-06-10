@@ -29,11 +29,10 @@ function nettoOrBrutto() {
   }
 }
 
-nettoToBrutto.addEventListener('change', nettoOrBrutto);
-bruttoToNetto.addEventListener('change', nettoOrBrutto);
-
 function calculateResult(e) {
   e.preventDefault();
+
+  nettoOrBrutto()
 
   const inputSumValue = inputSum.value;
   inputSumDisplay.innerHTML =
